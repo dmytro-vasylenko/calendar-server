@@ -16,7 +16,7 @@ MongoClient.connect(config.mongodbUrl, (error, database) => {
 		user: "test",
 		password: hashPassword("test"),
 		calendar: []
-	});
+	}, {upsert: true});
 });
 
 
